@@ -1,6 +1,7 @@
-// Get the count of attendance for Employee per day
+// Get the count of attendance per Employees per day
 
-// Date
+// ######################################################################################## Date Query ########################################################################################
+
 
 let
     Source = Excel.CurrentWorkbook(){[Name="Dates"]}[Content],
@@ -14,7 +15,8 @@ in
 
 
 
-// Employee Query
+// ######################################################################################## Employee Query Query ########################################################################################
+
 
 let
     Source = Excel.CurrentWorkbook(){[Name="Employees"]}[Content],
