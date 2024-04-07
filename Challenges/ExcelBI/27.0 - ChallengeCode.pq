@@ -1,3 +1,5 @@
+// Find all the possible matches without considering the home criteria
+
 let
     Source = Excel.CurrentWorkbook(){[Name="TClubs"]}[Content],
     ChangedType = Table.TransformColumnTypes(Source,{{"Clubs", type text}}),
