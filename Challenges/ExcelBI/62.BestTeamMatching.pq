@@ -1,6 +1,7 @@
 // Get Team matching from the best 2 teams of both groups
 
-// Group A query
+// ######################################################################################## Group A Query ########################################################################################
+
 
 let
     Source = Excel.CurrentWorkbook(){[Name="GroupA"]}[Content],
@@ -19,7 +20,8 @@ in
     RenamedColumns
 
 
-// Group B query
+// ######################################################################################## Group B Query ########################################################################################
+
 
 let
     Source = Excel.CurrentWorkbook(){[Name="GroupB"]}[Content],
