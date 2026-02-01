@@ -1,0 +1,1 @@
+fxNoEmptyCols = (tbl as table) as table => Table.SelectColumns( tbl,  List.Select( Table.ColumnNames( tbl ),  each not List.IsEmpty (  List.RemoveMatchingItems(  Table.Column( tbl, _),  {null, ""}  )  )  )  )
